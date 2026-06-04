@@ -101,22 +101,23 @@ a:hover, a:active {
   text-align: center;  
 }
 
-#galery {
+.gallery {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around ;
   padding: 20px;
+  background-color: rgb(113, 119, 68);
 }
 
-.img {
-  width: 100px;
+img {
+  width: 350px;
   height: auto;
 }
 
-.footer {
+footer {
   background-color: rgb(96, 21, 32);
   color: rgb(188, 189, 139);
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   font-size: 14px;
   padding: 10px;
 }
