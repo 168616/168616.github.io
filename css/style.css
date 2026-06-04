@@ -111,3 +111,12 @@ a:hover, a:active {
   width: 100px;
   height: auto;
 }
+
+.footer {
+  background-color: rgb(96, 21, 32);
+  color: rgb(188, 189, 139);
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 10px;
+}
