@@ -23,19 +23,17 @@ header {
     "ELXP" 0;
 }
 
-
-  border-radius: 50%;
-
-
 a {
   background-color: rgb(113, 119, 68);
   color: rgb(96, 21, 32);
   border: 5px solid rgb(96, 21, 32);
+  font-size: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  padding: 30px;
+  padding: 20px;
 }
+
 
 a:hover, a:active {
   background-color: rgb(96, 21, 32);
