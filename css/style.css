@@ -14,8 +14,8 @@ header {
   color: rgb(188, 189, 139);
   font-family:  "Bitcount Grid Single";
   font-size:xx-large;
-  font-weight: 300;
-  font-style: normal;
+  font-weight: 900;
+  font-style: bold;
   font-variation-settings:
     "slnt" 0,
     "CRSV" 0.5,
@@ -32,12 +32,39 @@ a {
   text-decoration: none;
   display: inline-block;
   padding: 20px;
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
 }
-
 
 a:hover, a:active {
   background-color: rgb(96, 21, 32);
   color: rgb(188, 189, 139);
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+.header {
+  text-align: center;
+  font-family: 'Bitcount Grid Single';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  background-color: rgb(96, 21, 32);
+  color: rgb(188, 189, 139);
+  padding: 20px;
+}
+
+.news {
+  background-color: rgb(55, 61, 32);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 #titulo {  
@@ -50,14 +77,15 @@ a:hover, a:active {
 
 }
 
-#p {
+p {
   
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+    max-width: 60ch;
 }
 
 #navbar {
@@ -65,7 +93,16 @@ a:hover, a:active {
   justify-content: space-around;
   background-color: rgb(113, 119, 68);
   padding: 30px;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:  
+    "wdth" 100;
+
 }
+
+
 
 .container {  
    display: grid;
@@ -108,7 +145,7 @@ a:hover, a:active {
   background-color: rgb(113, 119, 68);
 }
 
-img {
+.gallery img {
   width: 350px;
   height: auto;
 }
