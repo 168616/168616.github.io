@@ -1,17 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
+:root {
+  --preto: rgb(52, 28, 12);
+  --branco: rgb(188, 189, 139);
+  --escuroverde: rgb(55, 61, 32);
+  --escurovermelho: rgb(96, 21, 32);
+  --medioverde: rgb(113, 119, 68);
+}
+
+html {
+  color-scheme: light;
+} 
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --preto: rgb(188, 189, 139);
+    --branco: rgb(52, 28, 12);
+    --escuroverde: rgb(113, 119, 68);
+    --escurovermelho: rgb(96, 21, 32);
+    --medioverde: rgb(55, 61, 32) ;
+  }
+
+  html {
+    color-scheme: dark;
+  } 
+}
+
+[modo-light-dark="light"] {
+  color-scheme: light;
+  --preto: rgb(52, 28, 12);
+  --branco: rgb(188, 189, 139);
+  --escuroverde: rgb(55, 61, 32);
+  --escurovermelho: rgb(96, 21, 32);
+  --medioverde: rgb(113, 119, 68);
+}
+
+[modo-light-dark="dark"] {
+  color-scheme: dark;
+  --preto: rgb(188, 189, 139);
+  --branco: rgb(52, 28, 12);
+  --escuroverde: rgb(113, 119, 68);
+  --escurovermelho: rgb(96, 21, 32);
+  --medioverde: rgb(55, 61, 32) ;
+}
+
+
+/*html {
+  color-scheme: light dark;
+}
+*/
 body {
-  background-color: rgb(188, 189, 139);
-  color: rgb(52, 28, 12);
+  background-color: var(--branco);
+  color: var(--preto);
 }
 
 header {
   padding: 20px;
   text-align: center;
   font-size: 75px;
-  background: rgb(55, 61, 32);
-  color: rgb(188, 189, 139);
+  background: var(--escuroverde);
+  color: var(--branco);
   font-family:  "Bitcount Grid Single";
   font-size:xx-large;
   font-weight: 900;
@@ -24,9 +73,9 @@ header {
 }
 
 a {
-  background-color: rgb(113, 119, 68);
-  color: rgb(96, 21, 32);
-  border: 5px solid rgb(96, 21, 32);
+  background-color: var(--medioverde);
+  color: var(--escurovermelho);
+  border: 5px solid var(--escurovermelho);
   font-size: 20px;
   text-align: center;
   text-decoration: none;
@@ -40,8 +89,8 @@ a {
 }
 
 a:hover, a:active {
-  background-color: rgb(96, 21, 32);
-  color: rgb(188, 189, 139);
+  background-color: var(--escurovermelho);
+  color: var(--branco);
 }
 
 img {
@@ -55,13 +104,13 @@ img {
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  background-color: rgb(96, 21, 32);
-  color: rgb(188, 189, 139);
+  background-color: var(--escurovermelho);
+  color: var(--branco);
   padding: 20px;
 }
 
 .news {
-  background-color: rgb(55, 61, 32);
+  background-color: var(--escuroverde);
   display: flex;
   justify-content: space-around;
   padding: 20px;
@@ -90,8 +139,8 @@ p {
 
 #navbar {
   display: flex;
-  justify-content: space-around;
-  background-color: rgb(113, 119, 68);
+  justify-content: space-between;
+  background-color: var(--medioverde);
   padding: 30px;
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
@@ -116,12 +165,12 @@ p {
 }
 
 .container div {
-  background-color: white;
+  background-color: var(--branco);
   padding: 10px;
 }
 .container div.header {
-  background-color: rgb(96, 21, 32);
-  color: rgb(188, 189, 139);
+  background-color: var(--escurovermelho);
+  color: var(--branco);
   grid-area: header;
   text-align: center;
 }
@@ -142,7 +191,7 @@ p {
   display: flex;
   justify-content: space-around ;
   padding: 20px;
-  background-color: rgb(113, 119, 68);
+  background-color: var(--medioverde);
 }
 
 .gallery img {
@@ -151,10 +200,21 @@ p {
 }
 
 footer {
-  background-color: rgb(96, 21, 32);
-  color: rgb(188, 189, 139);
+  background-color: var(--escurovermelho);
+  color: var(--branco);
   display: flex;
   justify-content:space-between;
   font-size: 14px;
   padding: 10px;
+}
+
+#botao {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  }
+
+#botao img {
+  width: 30px;
+  height: auto;
 }

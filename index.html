@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  modo-light-dark="light" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="./css/style.css"   rel="stylesheet">
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
@@ -14,12 +15,20 @@
             <h1> Blog</h1>
         </header>
     </div>
-
     <div id="navbar">
-        <a id="p" href="./pages/SobreMim.html">sobre mim</a>
-        <a id="p" href="./pages/contato.html">contato</a>
-        <a id="p" href="./pages/curriculo.html">currículo</a>
-        <a id="p" href="./pages/receitas.html">receitas</a>
+        <div>
+            <a id="p" href="./pages/SobreMim.html">sobre mim</a>
+            <a id="p" href="./pages/contato.html">contato</a>
+            <a id="p" href="./pages/curriculo.html">currículo</a>
+            <a id="p" href="./pages/receitas.html">receitas</a>
+        </div>
+        <div >
+           <select id="selectModo" >
+            <option value="light">Claro</option>
+            <option value="dark">Escuro</option>
+            <option value="Sistema">Sistema</option>
+           </select>
+        </div>
     </div>
 
     <div class="container">
