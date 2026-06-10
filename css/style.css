@@ -10,16 +10,16 @@
 }
 
 html {
-  color-scheme: light;
+  color-scheme: light dark;
 } 
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --preto: rgb(188, 189, 139);
-    --branco: rgb(52, 28, 12);
-    --escuroverde: rgb(113, 119, 68);
-    --escurovermelho: rgb(96, 21, 32);
-    --medioverde: rgb(55, 61, 32) ;
+    --preto: rgb(240, 240, 195);
+    --branco: rgb(1, 16, 0);
+    --escuroverde: rgb(35, 41, 10);
+    --escurovermelho: rgb(76, 10, 32);
+    --medioverde:rgb(54, 59, 15) ;
   }
 
   html {

@@ -1,13 +1,13 @@
-const elemSelect = document.querySelector('#tema');
+const elemSelect = document.querySelector('#selectModo');
 
 elemSelect.addEventListener('change', function() {
-   if (elemSelect.value == 'light') {
-    document.documentElement.setAtribute('modo-light-dark', 'light'); 
-   } else if (elemSelect.value == 'dark') {
-    document.documentElement.setAtribute('modo-light-dark', 'dark');
+   if (elemSelect.value === 'light') {
+    document.documentElement.setAttribute('modo-light-dark', 'light');
+   } else if (elemSelect.value === 'dark') {
+    document.documentElement.setAttribute('modo-light-dark', 'dark');
    } else {
-    document.documentElement.removeAtribute('modo-light-dark');
+    document.documentElement.removeAttribute('modo-light-dark');
    }
 
-   console.log(elemSelect);
+   console.log(elemSelect.value);
 });
