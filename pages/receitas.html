@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html modo-light-dark="light" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas</title>
     <link href="../css/style.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>Blog</h1>
     </header>
     <div id="navbar">
         <a href="../index.html">Home</a>
+        <div>
+            <select id="selectModo">
+                <option value="light">Claro</option>
+                <option value="dark">Escuro</option>
+                <option value="Sistema">Sistema</option>
+            </select>
+        </div>
+                <div>
+            <button onclick="increaseFont()"> Aumentar fonte</button>
+             <button onclick="decreaseFont()">Diminuir fonte</button>
+        </div>
     </div>
-     <div >
-           <select id="selectModo" >
-            <option value="light">Claro</option>
-            <option value="dark">Escuro</option>
-            <option value="Sistema">Sistema</option>
-           </select>
-        </div>
-      <div class="header">
-            <h1>
+    <div class="header">
+        <h1>
             Receitas
-            </h1>
-        </div>
+        </h1>
+    </div>
     <article>
-      
+
         <h2>Mousse de maracujá</h2>
         <h5>ingredientes</h5>
         <ul>
@@ -37,16 +43,21 @@
         </ul>
         <h5>Modo de preparo</h5>
         <ol>
-            <li>Em um liquidificador, bata o leite condensado, o creme de leite e o suco de maracujá até obter uma mistura homogênea.</li>
+            <li>Em um liquidificador, bata o leite condensado, o creme de leite e o suco de maracujá até obter uma
+                mistura homogênea.</li>
             <li>Se estiver muito densa, adicione mais a água e bata por mais alguns segundos.</li>
-            <li>Despeje a musse em taças individuais e leve à geladeira por cerca de 4 horas ou até que esteja firme.</li>
+            <li>Despeje a musse em taças individuais e leve à geladeira por cerca de 4 horas ou até que esteja firme.
+            </li>
             <li>Sirva gelado e bom apetite!</li>
         </ol>
     </article>
     <br><br><br><br>
-      <footer>
+    <footer>
         <p>Copyright 2026</p>
         <p>Desenvolvido por Micaella</p>
     </footer>
-</body>    
+    
+    <script src="../js/script.js"></script>
+</body>
+
 </html>

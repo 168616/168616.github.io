@@ -7,6 +7,7 @@
   --escuroverde: rgb(55, 61, 32);
   --escurovermelho: rgb(96, 21, 32);
   --medioverde: rgb(113, 119, 68);
+  font-size: 16px;
 }
 
 html {
@@ -58,11 +59,11 @@ body {
 header {
   padding: 20px;
   text-align: center;
-  font-size: 75px;
+  font-size: 5rem;
   background: var(--escuroverde);
   color: var(--branco);
   font-family:  "Bitcount Grid Single";
-  font-size:xx-large;
+  font-size: 4.5rem;
   font-weight: 900;
   font-style: bold;
   font-variation-settings:
@@ -76,7 +77,7 @@ a {
   background-color: var(--medioverde);
   color: var(--escurovermelho);
   border: 5px solid var(--escurovermelho);
-  font-size: 20px;
+  font-size: 1.3rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -116,7 +117,7 @@ img {
   padding: 20px;
 }
 
-#titulo {  
+/* #titulo {  
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -124,10 +125,10 @@ img {
   font-variation-settings:
     "wdth" 100;
 
-}
+} */
 
 p {
-  
+  font-size: 1.2rem;
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -135,6 +136,11 @@ p {
   font-variation-settings:
     "wdth" 100;
     max-width: 60ch;
+}
+
+article {
+  
+    margin-left:5rem;
 }
 
 #navbar {
@@ -148,7 +154,7 @@ p {
   font-style: normal;
   font-variation-settings:  
     "wdth" 100;
-
+  font-size: 1.8rem;
 }
 
 
@@ -204,7 +210,7 @@ footer {
   color: var(--branco);
   display: flex;
   justify-content:space-between;
-  font-size: 14px;
+  font-size: 0.5rem;
   padding: 10px;
 }
 
@@ -218,3 +224,4 @@ footer {
   width: 30px;
   height: auto;
 }
+
