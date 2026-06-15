@@ -7,7 +7,7 @@
   --escuroverde: rgb(55, 61, 32);
   --escurovermelho: rgb(96, 21, 32);
   --medioverde: rgb(113, 119, 68);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 html {
@@ -46,11 +46,6 @@ html {
   --medioverde: rgb(55, 61, 32) ;
 }
 
-
-/*html {
-  color-scheme: light dark;
-}
-*/
 body {
   background-color: var(--branco);
   color: var(--preto);
@@ -94,12 +89,50 @@ a:hover, a:active {
   color: var(--branco);
 }
 
-img {
-  width: 200px;
-  height: auto;
+button {
+  background-color: var(--medioverde);
+  color: var(--escurovermelho);
+  border: 5px solid var(--escurovermelho);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+  font-size: 1.3rem;
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
 }
 
-.header {
+button:hover, button:active {
+  background-color: var(--escurovermelho);
+  color: var(--branco);
+}
+
+select {
+   background-color: var(--medioverde);
+  color: var(--escurovermelho);
+  border: 5px solid var(--escurovermelho);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+  font-size: 1.3rem;
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+}
+
+select:hover, select:active {
+   background-color: var(--escurovermelho);
+   color: var(--branco);
+}
+
+
+.titulo {
   text-align: center;
   font-family: 'Bitcount Grid Single';
   font-style: normal;
@@ -110,25 +143,21 @@ img {
   padding: 20px;
 }
 
-.news {
-  background-color: var(--escuroverde);
+#news {
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
+  padding: 5px;
+  flex-direction: column;
+  justify-content: center;
+  border: 5px solid var(--escuroverde);
+  border-radius: 10px;
 }
 
-/* #titulo {  
-  font-family: "Merriweather", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-
-} */
+#news img {
+  width: 150px;
+}
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -139,8 +168,8 @@ p {
 }
 
 article {
-  
-    margin-left:5rem;
+    margin-left:25px;
+    margin-right:25px;
 }
 
 #navbar {
@@ -183,6 +212,7 @@ article {
 .container div.menu {
   grid-area: menu;
   width: 30%;
+  
 }
 .container div.content {
   grid-area: content;
@@ -205,6 +235,7 @@ article {
   height: auto;
 }
 
+
 footer {
   background-color: var(--escurovermelho);
   color: var(--branco);
@@ -213,15 +244,3 @@ footer {
   font-size: 0.5rem;
   padding: 10px;
 }
-
-#botao {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  }
-
-#botao img {
-  width: 30px;
-  height: auto;
-}
-

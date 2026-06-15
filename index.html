@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html  modo-light-dark="light" lang="en">
+<html modo-light-dark="light" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link href="./css/style.css"   rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,30 +21,33 @@
             <a id="p" href="./pages/curriculo.html">currículo</a>
             <a id="p" href="./pages/receitas.html">receitas</a>
         </div>
-        <div >
-           <select id="selectModo" >
-            <option value="light">Claro</option>
-            <option value="dark">Escuro</option>
-            <option value="Sistema">Sistema</option>
-           </select>
-        </div>
         <div>
+            <select id="selectModo">
+                <option value="light">Claro</option>
+                <option value="dark">Escuro</option>
+                <option value="Sistema">Sistema</option>
+            </select>
             <button onclick="increaseFont()"> Aumentar fonte</button>
-             <button onclick="decreaseFont()">Diminuir fonte</button>
+            <button onclick="decreaseFont()">Diminuir fonte</button>
         </div>
     </div>
-
-    <div class="container">
-        <div class="header">
-            <h1>
+    <div class="titulo">
+        <h1>
             Home
-            </h1>
-        </div>
+        </h1>
+    </div>
+    <div class="container">
         <aside class="menu">
             <h3>Últimas Postagens</h3>
-            <img>
-            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
+            <div id="news"><img src="./assets/cyndaquill.jpeg">
+                <p>postagem 1</p>
+            </div>
+            <div id="news"><img src="./assets/Ditto Sprite.jpeg">
+                <p>postagem 2</p>
+            </div>
+            <div id="news"><img src="./assets/Zigzagoon Sprite.jpeg">
+                <p>postagem 3</p>
+            </div>
         </aside>
 
         <main class="content">
@@ -54,15 +57,8 @@
                 aprendido durante a materia.</p>
             <p></p>
         </main>
-    </div>  
+    </div>
     <br><br><br><br>
-        <h3>Últimas Postagens</h3>
-    <article class="news">
-        <p><img src="./assets/Zigzagoon Sprite.jpeg" alt="Imagem do pokemon zigzagoon">texto</p>       
-        <img src="./assets/Ditto Sprite.jpeg" alt="Imagem do pokemon ditto">
-        <img src="./assets/leafeon.jpeg" alt="Imagem do pokemon leafeon">
-        <img src="./assets/cyndaquill.jpeg" alt="Imagem do pokemon cyndaquill">
-    </article>
     <footer>
         <p>Copyright 2026</p>
         <p>Desenvolvido por Micaella</p>
