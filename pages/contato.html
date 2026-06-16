@@ -12,16 +12,14 @@
     </header>
     <div id="navbar">
     <a href="../index.html">Home</a>
-     <div >
-           <select id="selectModo" >
-            <option value="light">Claro</option>
-            <option value="dark">Escuro</option>
-            <option value="Sistema">Sistema</option>
-           </select>
-        </div>
-                <div>
+        <div>
+            <select id="selectModo">
+                <option value="light">Claro</option>
+                <option value="dark">Escuro</option>
+                <option value="Sistema">Sistema</option>
+            </select>
             <button onclick="increaseFont()"> Aumentar fonte</button>
-             <button onclick="decreaseFont()">Diminuir fonte</button>
+            <button onclick="decreaseFont()">Diminuir fonte</button>
         </div>
     </div>
       <div class="titulo">
@@ -29,23 +27,29 @@
             Contato
             </h1>
         </div>
-    <article>
+    <article id ='contato'>
         <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <h4>Formulario para contato</h4>
-        <form>
+        <h2>Formulario para contato</h2>
+        <form id="contactForm">
+            <div id="inputBox">
             <label for="name">Nome</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name"></div>
             <br>
+            <div id="inputBox">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email"></div>
             <br>
+            <div id="inputBox">
             <label for="message">Mensagem</label>
             <textarea id="message" name="message"></textarea>
-            <br>
+            </div><br>
+            <div id="submitBtn">
             <button type="submit">Enviar</button>
+            </div><div id="contactFeedback" class="feedback"></div>
 
         </form>
     </article>
+<br><br><br><br>
       <footer>
         <p>Copyright 2026</p>
         <p>Desenvolvido por Micaella</p>

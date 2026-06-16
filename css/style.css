@@ -39,11 +39,11 @@ html {
 
 [modo-light-dark="dark"] {
   color-scheme: dark;
-  --preto: rgb(188, 189, 139);
-  --branco: rgb(52, 28, 12);
-  --escuroverde: rgb(113, 119, 68);
-  --escurovermelho: rgb(96, 21, 32);
-  --medioverde: rgb(55, 61, 32) ;
+    --preto: rgb(240, 240, 195);
+    --branco: rgb(1, 16, 0);
+    --escuroverde: rgb(35, 41, 10);
+    --escurovermelho: rgb(76, 10, 32);
+    --medioverde:rgb(54, 59, 15) ;
 }
 
 body {
@@ -52,13 +52,12 @@ body {
 }
 
 header {
-  padding: 20px;
+  padding: 15px;
   text-align: center;
-  font-size: 5rem;
   background: var(--escuroverde);
   color: var(--branco);
   font-family:  "Bitcount Grid Single";
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 900;
   font-style: bold;
   font-variation-settings:
@@ -150,10 +149,22 @@ select:hover, select:active {
   justify-content: center;
   border: 5px solid var(--escuroverde);
   border-radius: 10px;
+  background-color: var(--escuroverde);
+  width: 170px;
+  height: 180px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  align-items: center;
 }
 
 #news img {
-  width: 150px;
+  width: 125px;
+  border-radius: 10px;
+
+
 }
 
 p {
@@ -172,6 +183,15 @@ article {
     margin-right:25px;
 }
 
+#contato {
+  margin-left: 25px;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -186,7 +206,57 @@ article {
   font-size: 1.8rem;
 }
 
+#contactForm {
+ background-color: var(--medioverde);
+ padding: 40px;
+ width: 320px;
+ text-align: center; 
+}
 
+#contactForm h3 {
+  color: var(--preto);
+  margin-bottom: 20px;
+
+}
+
+#inputBox{
+  position: relative;
+  margin: 20px 0;
+}
+
+#inputBox input{
+  width: 100%;
+  padding: 12px 15px;
+  background:none ;
+  border: none;
+  outline:none;
+  color: var(--preto);
+  font-size: 18px;
+  border-bottom: 2px solid var(--branco);
+  transition: 0.4s;
+}
+
+#inputBox input:focus {
+  border-color: var(--escurovermelho);
+  }
+
+  #inputBox span{
+    position: absolute;
+    top:50%;
+    left: 15px;
+    color: var(--escuroverde);
+    font-size: 16px;
+    pointer-events: none;
+    transition:0.4s;
+    transform: translateY(50%);
+  }
+
+  #inputBox input:focus + span,
+  #inputBox input:not(:placeholder-shown) + spam {
+    top: 5px;
+    font-size: 12px;
+    color: var(--escurovermelho);
+  }
 
 .container {  
    display: grid;
@@ -212,6 +282,8 @@ article {
 .container div.menu {
   grid-area: menu;
   width: 30%;
+  text-align: center;
+  font-size: 1,1rem;
   
 }
 .container div.content {
@@ -243,4 +315,60 @@ footer {
   justify-content:space-between;
   font-size: 0.5rem;
   padding: 10px;
+}
+
+table {
+  width: 800px;
+  margin-top: 100px;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+th, td {
+padding: 16px 24px;
+text-align: left;
+}
+
+thead th {
+  background-color: var(--escurovermelho);
+  color: var(--branco);
+  width: 25%;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--medioverde);
+  color: var(--branco);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--escuroverde);
+  color: var(--branco);
+}
+
+#curriculo {
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+#curriculo div{
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+#sobreMim {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#receita {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#receita div{
+  text-align: left;
 }

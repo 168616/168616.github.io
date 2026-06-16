@@ -40,3 +40,26 @@ function decreaseFont() {
     root.style.fontSize = `${current - 2}px`;
   }
 }
+
+const contactForm = document.querySelector('#contactForm');
+const contactFeedback = document.querySelector('#contactFeedback');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = contactForm.querySelector('#name').value.trim();
+    const email = contactForm.querySelector('#email').value.trim();
+    const message = contactForm.querySelector('#message').value.trim();
+
+    if (!name || !email || !message) {
+      contactFeedback.textContent = 'Por favor, preencha todos os campos antes de enviar.';
+      contactFeedback.style.color = 'red';
+      return;
+    }
+
+    contactFeedback.textContent = 'Mensagem enviada com sucesso!';
+    contactFeedback.style.color = 'green';
+    contactForm.reset();
+  });
+}
